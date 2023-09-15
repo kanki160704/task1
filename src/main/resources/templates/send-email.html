@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/send-email" method="post">
+        recipientEmail: <input type="text" name="recipientEmail" th:value="${recipientEmail}" id="recipientEmail" class="form-control"><br>
+        startTime: <input type="text" name="startTime" th:value="${startTime}" id="startTime" class="form-control"><br>
+        endTime: <input type="text" name="endTime" th:value="${endTime}" id="endTime" class="form-control"><br>
+        subject: <input type="text" name="subject" th:value="${subject}" id="subject" class="form-control"><br>
+        description: <input type="text" name="description" th:value="${description}" id="description" class="form-control"><br>
+        templateId: <input type="text" name="templateId" th:value="${templateId}" id="templateId" class="form-control"><br>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
